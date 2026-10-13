@@ -6,6 +6,7 @@ __pycache__/
 # quarto render output
 _site/
 .quarto/
+/index_files/
 
 # playwright mcp scratch (screenshots, console logs, snapshots)
 .playwright-mcp/
