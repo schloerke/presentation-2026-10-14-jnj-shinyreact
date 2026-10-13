@@ -3,7 +3,7 @@ title: "`shinyreact`"
 subtitle: "Building Custom Shiny UI with React"
 author:
   - "Barret Schloerke"
-  - "posit / Shiny Team"
+  - "Posit · Shiny Team"
   - "@schloerke"
 # Nothing here is executed: the `shinylive-r` blocks are handled by a filter and
 # mermaid by quarto itself. Say so, or quarto sees `{shinylive-r}`, guesses
@@ -1013,7 +1013,7 @@ tradeoff of an experimental package.
 ::: {.handle}
 Barret Schloerke
 
-posit / Shiny Team
+Posit · Shiny Team
 
 @schloerke
 :::
