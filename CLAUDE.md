@@ -3,7 +3,10 @@
 Talk materials for Barret Schloerke's Shiny Day talk at J&J, adapted from the
 posit::conf(2026) session (schloerke/presentation-2026-09-15-posit-conf-shinyreact).
 The bottom-left logo on the title/recap/end slides is J&J's wordmark,
-`theme/jnj-logo.svg` (Wikimedia "JNJ Logo New.svg"), where conf's logo was. Not a package;
+`theme/jnj-logo.svg` (Wikimedia "JNJ Logo New.svg"), where conf's logo was. Its
+svg has a pure white `#ffffff` plate added (padded viewBox + `rect`), as the
+brand shows it: J&J red straight on the dark ground vibrated. Keep it white - it is
+their logo; tinted plates were tried and rejected. Not a package;
 nothing here ships to users. If knowledge is corrected or enhanced, update this 
 document to support future sessions.
 
