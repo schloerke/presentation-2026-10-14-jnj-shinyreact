@@ -24,7 +24,7 @@ format:
     max-scale: 2
     center: false
     slide-number: c
-    footer: "posit::conf(2026) · @schloerke"
+    footer: "Shiny Day @ J&J · @schloerke"
     code-line-numbers: false
     code-copy: false
     incremental: true

@@ -1,6 +1,10 @@
 # `shinyreact`: Building Custom Shiny UI with React
 
-📽️ Slides: https://schloerke.com/presentation-2026-09-15-posit-conf-shinyreact/
+🗓️ Shiny Day @ Johnson & Johnson — 2026-10-14
+
+📽️ Slides: https://schloerke.com/presentation-2026-10-14-jnj-shinyreact/
+
+Adapted from the [posit::conf(2026) talk](https://github.com/schloerke/presentation-2026-09-15-posit-conf-shinyreact) ([slides](https://schloerke.com/presentation-2026-09-15-posit-conf-shinyreact/)).
 
 ## Links
 

@@ -247,7 +247,7 @@ $presentation-block-margin: 44px !default;
     font-size: $presentation-h1-font-size;
     line-height: .98;
 
-    // No kicker: the conference logo sits at the bottom of the slide instead.
+    // No kicker: the host logo sits at the bottom of the slide instead.
     &::after { @include swoosh(520px); margin-top: 42px; }
   }
   .subtitle {
@@ -289,7 +289,7 @@ $presentation-block-margin: 44px !default;
   }
   .date { display: none; }
 
-  // The conf logo and the repo QR come from the shared background rule below.
+  // The host logo and the repo QR come from the shared background rule below.
 }
 
 // The title slide's two motifs: the orbit, and the hex ring + logo on the right
@@ -1704,39 +1704,41 @@ $presentation-block-margin: 44px !default;
   text-align: right;
 }
 
-// Conf logo, bottom-left (DESIGN.md 6). A background layer rather than a
+// Host logo (J&J's wordmark), bottom-left (DESIGN.md 6). A background layer rather than a
 // pseudo-element: both of the title slide's own pseudos are taken (orbit,
 // hex ring), and `background-image` in its own rule leaves the divider's
 // `background: $ink-deep` shorthand alone. Same url() walk as shiny-react.png.
-// Second layer: the repo QR, just right of the conf logo. `theme/qr-repo.svg` is generated
+// Second layer: the repo QR, just right of the host logo. `theme/qr-repo.svg` is generated
 // (see CLAUDE.md); regenerate it if the repo moves. Light modules on the
 // deck's own ink so it reads as part of the slide, with the two-module quiet
 // zone the format needs. background-position percentages resolve against
 // (area - image), so `calc(100% - 30px)` puts each bottom edge 30px off the
-// canvas - the speaker lockup's `bottom`, so all three sit on one line.
+// canvas - the speaker lockup's `bottom`, so all three sit on one line. The
+// wordmark is 10.7:1, so it is centred on the QR's height instead (30 + (138 -
+// 30) / 2 = 84px up) rather than sitting on its baseline.
 #title-slide,
 .reveal section.recap,
 .reveal section.divider.end {
   background-image:
-    url('../../../../../theme/posit-conf-2026.svg'),
+    url('../../../../../theme/jnj-logo.svg'),
     url('../../../../../theme/qr-repo.svg');
   background-repeat: no-repeat;
   background-position:
-    $margin calc(100% - 30px),
-    #{$margin + 202px} calc(100% - 30px);
-  background-size: 162px 95px, 138px 138px;
+    $margin calc(100% - 84px),
+    #{$margin + 362px} calc(100% - 30px);
+  background-size: 322px 30px, 138px 138px;
 }
 
 // The repo QR, as a link. A background layer cannot be clicked, so
 // `theme/qr-links.html` appends a transparent anchor to each of the three
 // slides above and this parks it exactly over the layer - the same
-// `$margin + 202px` / 30px / 138px the background-position and -size use, so
+// `$margin + 362px` / 30px / 138px the background-position and -size use, so
 // the two move together. Absolute against the section, which reveal has
 // already positioned; no `position: relative` on the section (that would push
 // it back into flow and off-canvas).
 .reveal .qr-link {
   position: absolute;
-  left: $margin + 202px;
+  left: $margin + 362px;
   bottom: 30px;
   width: 138px;
   height: 138px;

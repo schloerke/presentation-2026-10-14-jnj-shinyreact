@@ -1,6 +1,9 @@
-# posit::conf(2026) — "Shiny + React"
+# Shiny Day @ Johnson & Johnson (2026-10-14) — "Shiny + React"
 
-Talk materials for Barret Schloerke's posit::conf(2026) session. Not a package;
+Talk materials for Barret Schloerke's Shiny Day talk at J&J, adapted from the
+posit::conf(2026) session (schloerke/presentation-2026-09-15-posit-conf-shinyreact).
+The bottom-left logo on the title/recap/end slides is J&J's wordmark,
+`theme/jnj-logo.svg` (Wikimedia "JNJ Logo New.svg"), where conf's logo was. Not a package;
 nothing here ships to users. If knowledge is corrected or enhanced, update this 
 document to support future sessions.
 
@@ -179,7 +182,7 @@ material.
 if its URL changes:
 
 ```bash
-uv run --with segno python -c "import segno; segno.make('https://github.com/schloerke/presentation-2026-09-15-posit-conf-shinyreact', error='m').save('theme/qr-repo.svg', scale=10, border=2, dark='#141519', light='#f2f4f8')"
+uv run --with segno python -c "import segno; segno.make('https://github.com/schloerke/presentation-2026-10-14-jnj-shinyreact', error='m').save('theme/qr-repo.svg', scale=10, border=2, dark='#141519', light='#f2f4f8')"
 uv run --with segno python -c "import segno; segno.make('https://posit-shiny-showcase-bioinformatics.share.connect.posit.cloud/', error='m').save('theme/qr-showcase.svg', scale=10, border=2, dark='#141519', light='#f2f4f8')"
 ```
 
@@ -1619,7 +1622,7 @@ measured, against the published site):
 
 ```bash
 D=index_files/libs/quarto-contrib/shinylive-0.10.12/shinylive/webr
-curl -sL "https://schloerke.com/presentation-2026-09-15-posit-conf-shinyreact/$D/vfs/usr/lib/R/library/translations/DESCRIPTION"
+curl -sL "https://schloerke.com/presentation-2026-10-14-jnj-shinyreact/$D/vfs/usr/lib/R/library/translations/DESCRIPTION"
 ```
 
 ### Running the demos offline — done, keep it that way
