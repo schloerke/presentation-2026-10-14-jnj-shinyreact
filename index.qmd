@@ -24,7 +24,7 @@ format:
     max-scale: 2
     center: false
     slide-number: c
-    footer: "Shiny Day @ J&J · @schloerke"
+    footer: "Johnson & Johnson · Shiny Day · @schloerke"
     code-line-numbers: false
     code-copy: false
     incremental: true
